@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@api/*": [
+        "src/api/*"
+      ],
+      "@core/*": [
+        "src/core/*"
+      ],
+      "@constant/*": [
+        "src/data/constant/*"
+      ],
+      "@decorator/*": [
+        "src/data/decorator/*"
+      ],
+      "@entity/*": [
+        "src/data/entity/*"
+      ],
+      "@guard/*": [
+        "src/data/guard/*"
+      ],
+      "@interceptor/*": [
+        "src/data/interceptor/*"
+      ],
+      "@interface/*": [
+        "src/data/interface/*"
+      ],
+      "@shared/*": [
+        "src/shared/*"
+      ],
+      "@securityConfig/*": [
+        "src/data/security-config/*"
+      ],
+    }
+  }
+}
