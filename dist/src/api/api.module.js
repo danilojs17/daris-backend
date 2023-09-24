@@ -14,11 +14,12 @@ const core_1 = require("@nestjs/core");
 const auth_guard_1 = require("../data/guard/auth.guard");
 const auth_module_1 = require("./auth/auth.module");
 const comment_module_1 = require("./comment/comment.module");
+const messages_module_1 = require("./messages/messages.module");
 let ApiModule = class ApiModule {
 };
 ApiModule = __decorate([
     (0, common_1.Module)({
-        imports: [auth_module_1.AuthModule, user_module_1.UserModule, post_module_1.PostModule, comment_module_1.CommentModule],
+        imports: [auth_module_1.AuthModule, user_module_1.UserModule, post_module_1.PostModule, comment_module_1.CommentModule, messages_module_1.MessagesModule],
         providers: [
             {
                 provide: core_1.APP_GUARD,

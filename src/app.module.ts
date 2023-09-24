@@ -10,6 +10,8 @@ import { AllExceptionsFilter } from '@interceptor/catch/catch.interceptor';
 import { ResponseInterceptor } from '@interceptor/response/response.interceptor';
 import { ApiModule } from '@api/api.module';
 import { SocketModule } from '@shared/socket/socket.module';
+import { PostManagerModule } from './core/post-manager/post-manager.module';
+import { MessagesManagerModule } from './core/messages-manager/messages-manager.module';
 
 const envFilePath: string = getEnvPath(`${__dirname}/../common/envs`);
 @Module({
@@ -20,6 +22,8 @@ const envFilePath: string = getEnvPath(`${__dirname}/../common/envs`);
     MorganModule,
     SocketModule,
     ApiModule,
+    PostManagerModule,
+    MessagesManagerModule,
   ],
   providers: [
     {

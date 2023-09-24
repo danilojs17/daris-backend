@@ -19,6 +19,8 @@ const catch_interceptor_1 = require("./data/interceptor/catch/catch.interceptor"
 const response_interceptor_1 = require("./data/interceptor/response/response.interceptor");
 const api_module_1 = require("./api/api.module");
 const socket_module_1 = require("./shared/socket/socket.module");
+const post_manager_module_1 = require("./core/post-manager/post-manager.module");
+const messages_manager_module_1 = require("./core/messages-manager/messages-manager.module");
 const envFilePath = (0, env_helper_1.getEnvPath)(`${__dirname}/../common/envs`);
 let AppModule = class AppModule {
 };
@@ -31,6 +33,8 @@ AppModule = __decorate([
             nest_morgan_1.MorganModule,
             socket_module_1.SocketModule,
             api_module_1.ApiModule,
+            post_manager_module_1.PostManagerModule,
+            messages_manager_module_1.MessagesManagerModule,
         ],
         providers: [
             {
