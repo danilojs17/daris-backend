@@ -14,7 +14,7 @@ export class CreateUserDto {
 
   @IsString()
   @IsNotEmpty()
-  @MaxLength(200)
+  @MaxLength(46)
   userPassword: string;
 
   @IsString()
@@ -33,6 +33,6 @@ export class CreateUserDto {
 
   @IsOptional()
   @IsEmail()
-  @MaxLength(200)
+  @MaxLength(50)
   userEmail?: string;
 }

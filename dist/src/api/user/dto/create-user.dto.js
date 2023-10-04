@@ -22,7 +22,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.MaxLength)(200),
+    (0, class_validator_1.MaxLength)(46),
     __metadata("design:type", String)
 ], CreateUserDto.prototype, "userPassword", void 0);
 __decorate([
@@ -45,7 +45,7 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsEmail)(),
-    (0, class_validator_1.MaxLength)(200),
+    (0, class_validator_1.MaxLength)(50),
     __metadata("design:type", String)
 ], CreateUserDto.prototype, "userEmail", void 0);
 exports.CreateUserDto = CreateUserDto;

@@ -59,10 +59,8 @@ export class UserService {
   }
 
   async findWithCondition(userCondition: IUserCondition): Promise<IUser> {
-    const user: IUser = await this.userRepository.findOne({
+    return await this.userRepository.findOne({
       where: { ...userCondition, userState: 1 },
-      relations: ['roleUser.permissions'],
     });
-    return user;
   }
 }

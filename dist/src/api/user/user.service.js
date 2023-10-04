@@ -44,11 +44,9 @@ let UserService = class UserService {
         return userId;
     }
     async findWithCondition(userCondition) {
-        const user = await this.userRepository.findOne({
+        return await this.userRepository.findOne({
             where: Object.assign(Object.assign({}, userCondition), { userState: 1 }),
-            relations: ['roleUser.permissions'],
         });
-        return user;
     }
 };
 UserService = __decorate([
